@@ -1,7 +1,7 @@
 from django.urls import path
-from payment.views import index
+from . import views
 
 
 urlpatterns = [
-    path("", index, name='index'),
+    path("", views.IndexPageView.as_view(), name='index'),
 ]
